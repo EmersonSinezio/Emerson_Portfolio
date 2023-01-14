@@ -9,13 +9,10 @@
         <span v-if="showEmail">Emerson.sineziio@gmail.com</span>
       </div>
       <div>
-        <a href="www.linkedin.com/in/emerson-mesquita-317a81258">Linkedin</a>
+        <a href="https://www.linkedin.com/in/emerson-sineziio">Linkedin</a>
       </div>
       <div>
         <a href="https://github.com/EmersonSinezio">Github</a>
-      </div>
-      <div>
-        <a href="https://wa.me/5585992393911">Whatsapp</a>
       </div>
     </div>
   </footer>
