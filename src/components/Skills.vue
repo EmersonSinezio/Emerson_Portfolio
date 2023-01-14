@@ -76,6 +76,9 @@
   justify-content: center;
   align-items: center;
 }
+.skills-description div{
+flex-direction: column;
+}
 .skills-description p {
   text-transform: uppercase;
 }
@@ -96,9 +99,6 @@
   .skills-description {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
-  }
-  .skills-description div {
-    flex-direction: column;
   }
 }
 </style>
