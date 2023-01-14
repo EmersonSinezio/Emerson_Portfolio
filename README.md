@@ -42,7 +42,7 @@ As tecs utilizadas para realizar o projeto:
 
 <hr/>
 
-### 4 - No final do projeto tem a aba contatos 
+### 4 - No final tem a aba contatos 
 
 ![Projects](https://github.com/EmersonSinezio/Emerson_Portfolio/blob/main/public/Readme/Contact.png)
 
@@ -52,8 +52,7 @@ As tecs utilizadas para realizar o projeto:
 
 A principal ideia do projeto é:
 
-- Escolher um produto de sua escolha
-- Comprar o item escolhido
+- Criar um portfólio para mostrar meus conhecimentos
 
 ## Autor
 
