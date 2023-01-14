@@ -3,46 +3,56 @@
     <h1>Skills</h1>
     <div class="skills-description">
       <div>
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
+        />
         <p>Html</p>
-        <span
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
-          omnis.</span
-        >
       </div>
       <div>
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+        />
+
         <p>Css</p>
-        <span
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
-          omnis</span
-        >
       </div>
       <div>
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+        />
+
         <p>Javascript</p>
-        <span
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
-          omnis</span
-        >
       </div>
       <div>
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+        />
+
         <p>React</p>
-        <span
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
-          omnis</span
-        >
       </div>
       <div>
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+        />
+
         <p>Vue</p>
-        <span
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
-          omnis</span
-        >
       </div>
       <div>
-        <p>Next</p>
-        <span
-          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
-          omnis</span
-        >
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+        />
+        <p>Next-js</p>
+      </div>
+      <div>
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+        />
+        <p>Node</p>
+      </div>
+      <div>
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+        />
+        <p>Sass</p>
       </div>
     </div>
   </div>
@@ -67,9 +77,28 @@
   align-items: center;
 }
 .skills-description p {
+  text-transform: uppercase;
+}
+.skills-description img {
   background-color: #333;
   padding: 1rem 1.2rem;
   margin: 0.5rem 2vw;
   border-radius: 0.5rem;
+  text-transform: uppercase;
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 600px) {
+  .skills-description img {
+    width: 40vw;
+    height: 20vh;
+  }
+  .skills-description {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills-description div {
+    flex-direction: column;
+  }
 }
 </style>

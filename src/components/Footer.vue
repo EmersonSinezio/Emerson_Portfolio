@@ -1,18 +1,21 @@
 <template>
   <footer class="footer">
     <div>
-      <h1>Contact</h1>
+      <h1 id="contact">Contact</h1>
     </div>
-    <div>
+    <div class="contact">
       <div class="email">
         <p @click="showEmail = !showEmail">Email</p>
         <span v-if="showEmail">Emerson.sineziio@gmail.com</span>
       </div>
       <div>
-        <a href="https://github.com/EmersonSinezio">Linkedin</a>
+        <a href="www.linkedin.com/in/emerson-mesquita-317a81258">Linkedin</a>
       </div>
       <div>
         <a href="https://github.com/EmersonSinezio">Github</a>
+      </div>
+      <div>
+        <a href="https://wa.me/5585992393911">Whatsapp</a>
       </div>
     </div>
   </footer>
@@ -35,24 +38,27 @@ export default {
   min-height: 70vh;
   background-color: #191919;
 }
-.footer div {
+.contact {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.footer div a,
-.footer div p {
+.contact a,
+.contact p {
   margin: 5vh 0;
   background-color: #333;
   padding: 1rem 1.2rem;
   border-radius: 0.5rem;
 }
-.footer div p {
+#contact {
+  margin-left: 5vw;
+}
+.contact p {
   cursor: pointer;
 }
-.footer div a {
+.contact a {
   text-decoration: none;
   color: #fff;
 }
@@ -61,5 +67,21 @@ export default {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.contact {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+}
+@media (max-width: 450px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer div {
+    margin-top: 5vh;
+  }
+  .contact div {
+    margin-left: 8px;
+  }
 }
 </style>

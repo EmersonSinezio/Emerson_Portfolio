@@ -3,28 +3,37 @@
     <h1>Projects</h1>
     <div class="projects">
       <div>
-        <p>Projeto 1</p>
-        <span>HTML CSS JS VUE REACT</span>
+        <a href="https://github.com/EmersonSinezio/Sneakers"
+          ><img src="@/assets/Sneakers.png" alt="Sneakers"
+        /></a>
+        <span> NEXT | NEXT-ROUTER | CSS-MODULES</span>
       </div>
       <div>
-        <p>Projeto 2</p>
-        <span>HTML CSS JS VUE REACT</span>
+        <a href="https://github.com/EmersonSinezio/ProjetoGames"
+          ><img src="@/assets/Games.png" alt="Games_Store_Project"
+        /></a>
+
+        <span>VUE | VUEX | VUE-ROUTER | SASS</span>
       </div>
       <div>
-        <p>Projeto 3</p>
-        <span>HTML CSS JS VUE REACT</span>
+        <a href="https://github.com/EmersonSinezio/Foody">
+          <img src="@/assets/Foody.png" alt="Food-website" />
+        </a>
+        <span>VUE-JS | VUEX | VUE-ROUTER | SASS</span>
       </div>
       <div>
-        <p>Projeto 4</p>
-        <span>HTML CSS JS VUE REACT</span>
+        <a href="https://github.com/EmersonSinezio/Next-Quiz">
+          <img src="@/assets/Quizz.png" alt="Quizz" />
+        </a>
+        <span>NEXT-JS | NEXT-ROUTER | SASS</span>
       </div>
       <div>
-        <p>Projeto 5</p>
-        <span>HTML CSS JS VUE REACT</span>
+        <p>Projeto</p>
+        <span>EM DESENVOLVIMENTO</span>
       </div>
       <div>
-        <p>Projeto 6</p>
-        <span>HTML CSS JS VUE REACT</span>
+        <p>Projeto</p>
+        <span>EM DESENVOLVIMENTO</span>
       </div>
     </div>
   </div>
@@ -42,6 +51,7 @@
 .projects div {
   flex-direction: column;
 }
+.projects div img,
 .projects div p {
   width: 30vw;
   height: 30vh;
@@ -58,5 +68,21 @@
 }
 .projects div span {
   font-size: 0.8rem;
+}
+@media (max-width: 600px) {
+  .projects div span {
+    font-size: 0.6rem;
+  }
+  .projects div {
+    margin: 0 5vw;
+  }
+}
+@media (max-width: 450px) {
+  .projects div img,
+  .projects div p {
+    width: 40vw;
+    height: 20vh;
+    margin: 5vh 0;
+  }
 }
 </style>

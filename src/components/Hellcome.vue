@@ -1,13 +1,15 @@
 <template>
   <div class="hellcome">
     <div class="description">
-      <h1>Hellcome i'm Emerson Sinezio</h1>
+      <h1>Hello World! i'm Emerson Sinezio</h1>
+      <p id="cargo">Front-end Developer</p>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique nemo
-        ab praesentium quasi dicta, beatae soluta aliquid nisi neque laudantium.
+        Sejam Bem vindos ao meu Portfólio Pessoal, me apaixonei pela área de
+        tecnologia por gostar muito de games e acabei me deparando com essa área
+        incrível
       </p>
     </div>
-    <div class="img">IMG</div>
+    <img src="@/assets/Atronauta.png" alt="Astronauta_Icon" class="img" />
   </div>
 </template>
 <style scoped>
@@ -33,5 +35,30 @@
 .img {
   width: 45%;
   height: 95%;
+}
+.img {
+  animation: 3s infinite pulse;
+}
+#cargo {
+  color: rgb(163, 160, 160);
+}
+@keyframes pulse {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 600px) {
+  .img {
+    display: none;
+  }
+  .description {
+    width: 80vw;
+  }
 }
 </style>

@@ -20,4 +20,10 @@ a {
   margin: 0 1vw;
   color: #fff;
 }
+@media (max-width: 600px) {
+  header h1,
+  .links {
+    font-size: 1rem;
+  }
+}
 </style>
