@@ -3,26 +3,26 @@
     <h1>Projects</h1>
     <div class="projects">
       <div>
-        <a href="https://github.com/EmersonSinezio/Sneakers"
+        <a href="https://sneakers-green.vercel.app/"
           ><img src="@/assets/Sneakers.png" alt="Sneakers"
         /></a>
         <span> NEXT | NEXT-ROUTER | CSS-MODULES</span>
       </div>
       <div>
-        <a href="https://github.com/EmersonSinezio/ProjetoGames"
+        <a href="https://games-store-eta.vercel.app/#/"
           ><img src="@/assets/Games.png" alt="Games_Store_Project"
         /></a>
 
         <span>VUE | VUEX | VUE-ROUTER | SASS</span>
       </div>
       <div>
-        <a href="https://github.com/EmersonSinezio/Foody">
+        <a href="https://foody-pearl-alpha.vercel.app/#/">
           <img src="@/assets/Foody.png" alt="Food-website" />
         </a>
         <span>VUE-JS | VUEX | VUE-ROUTER | SASS</span>
       </div>
       <div>
-        <a href="https://github.com/EmersonSinezio/Next-Quiz">
+        <a href="https://next-quiz-plum.vercel.app/">
           <img src="@/assets/Quizz.png" alt="Quizz" />
         </a>
         <span>NEXT-JS | NEXT-ROUTER | SASS</span>
