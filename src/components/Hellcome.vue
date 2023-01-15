@@ -4,9 +4,7 @@
       <h1>Hello World! i'm Emerson Sinezio</h1>
       <p id="cargo">Front-end Developer</p>
       <p>
-        Sejam Bem vindos ao meu Portfólio Pessoal, me apaixonei pela área de
-        tecnologia por gostar muito de games e acabei me deparando com essa área
-        incrível
+        Seja Bem vindo(a) ao meu Portfólio Pessoal, espero que goste!
       </p>
     </div>
     <img src="@/assets/Atronauta.png" alt="Astronauta_Icon" class="img" />
