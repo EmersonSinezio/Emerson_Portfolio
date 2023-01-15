@@ -54,6 +54,13 @@
         />
         <p>Sass</p>
       </div>
+         <div>
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
+        />
+
+        <p>MongoDB</p>
+      </div>
     </div>
   </div>
 </template>
