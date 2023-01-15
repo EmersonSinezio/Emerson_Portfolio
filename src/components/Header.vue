@@ -3,7 +3,7 @@
     <h1>Emerson Sinézio</h1>
     <div class="links">
       <a href="https://github.com/EmersonSinezio"> Github </a>
-      <a href="https://github.com/EmersonSinezio"> Linkedin</a>
+      <a href="https://www.linkedin.com/in/emerson-sineziio"/> Linkedin</a>
     </div>
   </header>
 </template>
