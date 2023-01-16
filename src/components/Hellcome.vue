@@ -1,7 +1,7 @@
 <template>
   <div class="hellcome">
     <div class="description">
-      <h1>Hello World! i'm Emerson Sinezio</h1>
+      <h1>Hello World! i'm Emerson Sinézio</h1>
       <p id="cargo">Front-end Developer</p>
       <p>
         Seja Bem vindo(a) ao meu Portfólio Pessoal, espero que goste!
