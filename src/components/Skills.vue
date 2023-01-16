@@ -1,7 +1,12 @@
 <template>
   <div class="skills">
     <h1>Skills</h1>
-    <div class="skills-description">
+    <div
+      class="skills-description"
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :visibleOnce="{ opacity: 1, y: 0 }"
+    >
       <div>
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
@@ -54,11 +59,10 @@
         />
         <p>Sass</p>
       </div>
-         <div>
+      <div>
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
         />
-
         <p>MongoDB</p>
       </div>
     </div>
@@ -83,8 +87,8 @@
   justify-content: center;
   align-items: center;
 }
-.skills-description div{
-flex-direction: column;
+.skills-description div {
+  flex-direction: column;
 }
 .skills-description p {
   text-transform: uppercase;

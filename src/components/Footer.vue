@@ -3,7 +3,12 @@
     <div>
       <h1 id="contact">Contact</h1>
     </div>
-    <div class="contact">
+    <div
+      class="contact"
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :visibleOnce="{ opacity: 1, y: 0 }"
+    >
       <div class="email">
         <p @click="showEmail = !showEmail">Email</p>
         <span v-if="showEmail">Emerson.sineziio@gmail.com</span>
