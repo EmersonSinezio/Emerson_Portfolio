@@ -47,8 +47,10 @@
         :initial="{ opacity: 0, y: 100 }"
         :visibleOnce="{ opacity: 1, y: 0 }"
       >
-        <p>Projeto</p>
-        <span>EM DESENVOLVIMENTO</span>
+        <a href="https://clock-opal-one.vercel.app/">
+          <img src="@/assets/clock_home.png"/>
+        </a>
+          <span>REACT | REACT-ROUTER | SASS</span>
       </div>
       <div
         v-motion
