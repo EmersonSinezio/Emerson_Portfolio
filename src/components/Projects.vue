@@ -7,7 +7,7 @@
         :initial="{ opacity: 0, y: 100 }"
         :visibleOnce="{ opacity: 1, y: 0 }"
       >
-        <a href="https://sneakers-green.vercel.app/"
+        <a href="https://sneakers-opal-alpha.vercel.app/"
           ><img src="@/assets/Sneakers.png" alt="Sneakers"
         /></a>
         <span> NEXT | NEXT-ROUTER | CSS-MODULES</span>
@@ -48,9 +48,9 @@
         :visibleOnce="{ opacity: 1, y: 0 }"
       >
         <a href="https://clock-opal-one.vercel.app/">
-          <img src="@/assets/clock_home.png"/>
+          <img src="@/assets/clock_home.png" />
         </a>
-          <span>REACT | REACT-ROUTER | SASS</span>
+        <span>REACT | REACT-ROUTER | SASS</span>
       </div>
       <div
         v-motion
