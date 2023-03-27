@@ -1,17 +1,17 @@
 <template>
-  <div class="hellcome">
+  <div class="welcome">
     <div class="description">
       <h1>Hello World! i'm Emerson Sinézio</h1>
       <p id="cargo">Front-end Developer</p>
       <p>
-        Seja Bem vindo(a) ao meu Portfólio Pessoal, espero que goste!
+        Seja Bem vindo(a) ao meu Portfolio Pessoal, espero que goste!
       </p>
     </div>
     <img src="@/assets/Atronauta.png" alt="Astronauta_Icon" class="img" />
   </div>
 </template>
 <style scoped>
-.hellcome {
+.welcome {
   width: 100%;
   height: 90vh;
   border-bottom: 1px solid #333;
@@ -22,7 +22,7 @@
 }
 .description,
 .img,
-.hellcome {
+.welcome {
   display: flex;
   justify-content: center;
   align-items: center;

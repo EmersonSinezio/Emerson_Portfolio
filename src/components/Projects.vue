@@ -57,8 +57,11 @@
         :initial="{ opacity: 0, y: 100 }"
         :visibleOnce="{ opacity: 1, y: 0 }"
       >
-        <p>Projeto</p>
-        <span>EM DESENVOLVIMENTO</span>
+      <a href="https://clock-opal-one.vercel.app/">
+          <img src="@/assets/Apple.png" />
+        </a>
+        <span>REACT | REACT-ICONS | SASS | TYPESCRIPT</span>
+
       </div>
     </div>
   </div>
