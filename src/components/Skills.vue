@@ -101,6 +101,19 @@
   text-transform: uppercase;
   width: 100px;
   height: 100px;
+  transition: transform 0.3s ease-in-out;
+}
+.skills-description img:hover {
+  animation: shake 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
 }
 @media (max-width: 600px) {
   .skills-description img {

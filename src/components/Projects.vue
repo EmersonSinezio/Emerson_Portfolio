@@ -87,6 +87,10 @@
   margin: 3vh 5vw;
   border-radius: 0.5rem;
 }
+.projects div img:hover{
+  animation: pulse 1s ease-in-out infinite;
+}
+
 .projects-container,
 .projects div,
 .projects div p {
@@ -96,6 +100,17 @@
 }
 .projects div span {
   font-size: 0.8rem;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 @media (max-width: 600px) {
   .projects div span {
