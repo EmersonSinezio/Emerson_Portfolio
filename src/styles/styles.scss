@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Bebas+Neue&family=Inter:wght@200;400;600;800&display=swap");
+@import "./colors/colors.scss";
+@import "./footer/footer.scss";
+@import "./projects/projects.scss";
+@import "./slider/slider.scss";
+@import "./home/home.scss";
+@import "./header/header.scss";
+*,
+#app,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Inter";
+}
+#app,
+body {
+  background-color: #151515;
+  color: $colorWhite;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}

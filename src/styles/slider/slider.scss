@@ -1,0 +1,41 @@
+// ----- Slider Styles -----
+
+.slider_container {
+  width: 100vw;
+  height: 40vh;
+  background-color: $colorDarkGray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slider_subContainer {
+  height: 90%;
+  overflow: hidden;
+  max-width: 750px;
+  & h1 {
+    text-align: center;
+    margin-bottom: 0.7rem;
+  }
+}
+
+.skills_container {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.skill {
+  margin: 0.5rem;
+  min-width: 200px;
+  height: 150px;
+  background-color: rgba($color: $colorGray, $alpha: 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  & img {
+    width: 80%;
+    height: 80%;
+  }
+}

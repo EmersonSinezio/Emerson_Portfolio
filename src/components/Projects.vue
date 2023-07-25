@@ -1,132 +1,93 @@
 <template>
-  <div class="projects-container">
-    <h1>Projects</h1>
-    <div class="projects">
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 100 }"
-        :visibleOnce="{ opacity: 1, y: 0 }"
-      >
-        <a href="https://sneakers-opal-alpha.vercel.app/"
-          ><img src="@/assets/Sneakers.png" alt="Sneakers"
-        /></a>
-        <span> NEXT | NEXT-ROUTER | CSS-MODULES</span>
+  <div class="projects_container">
+    <div class="projects_subContainer">
+      <div :class="`project_container ${show}`">
+        <div class="project">
+          <div class="project_image">
+            <img src="../assets/games_homepage.png" alt="project_games">
+          </div>
+          <div>
+            <h3>Projeto Games</h3>
+            <p>Bem-vindo ao universo épico dos games! Descubra as aventuras de God of War, enfrente os horrores de A
+              Plague Tale: Requiem e mergulhe na ação de GTA 5. Seja você um jogador casual ou hardcore, nosso site é o
+              destino perfeito para os apaixonados por jogos.</p>
+            <button>Visitar</button>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project_image">
+            <img src="../assets/sneakers_homepage.png" alt="">
+          </div>
+          <div>
+            <h3>Projeto Sneakers</h3>
+            <p>Descubra o mundo dos sapatos dos sonhos! Encontre o par perfeito para cada ocasião. De confortáveis a
+              estilosos, nosso e-commerce tem tudo que você precisa para arrasar no look. Não perca mais tempo, venha
+              explorar a coleção exclusiva de sapatos em nosso site agora</p>
+            <button>Visitar</button>
+          </div>
+        </div>
       </div>
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 100 }"
-        :visibleOnce="{ opacity: 1, y: 0 }"
-      >
-        <a href="https://games-store-eta.vercel.app/#/"
-          ><img src="@/assets/Games.png" alt="Games_Store_Project"
-        /></a>
-        <span>VUE | VUEX | VUE-ROUTER | SASS</span>
-      </div>
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 100 }"
-        :visibleOnce="{ opacity: 1, y: 0 }"
-      >
-        <a href="https://foody-pearl-alpha.vercel.app/#/">
-          <img src="@/assets/Foody.png" alt="Food-website" />
-        </a>
-        <span>VUE-JS | VUEX | VUE-ROUTER | SASS</span>
-      </div>
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 100 }"
-        :visibleOnce="{ opacity: 1, y: 0 }"
-      >
-        <a href="https://next-quiz-plum.vercel.app/">
-          <img src="@/assets/Quizz.png" alt="Quizz" />
-        </a>
-        <span>NEXT-JS | NEXT-ROUTER | SASS</span>
-      </div>
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 100 }"
-        :visibleOnce="{ opacity: 1, y: 0 }"
-      >
-        <a href="https://clock-opal-one.vercel.app/">
-          <img src="@/assets/clock_home.png" />
-        </a>
-        <span>REACT | REACT-ROUTER | SASS</span>
-      </div>
-      <div
-        v-motion
-        :initial="{ opacity: 0, y: 100 }"
-        :visibleOnce="{ opacity: 1, y: 0 }"
-      >
-      <a href="https://clock-opal-one.vercel.app/">
-          <img src="@/assets/Apple.png" />
-        </a>
-        <span>REACT | REACT-ICONS | SASS | TYPESCRIPT</span>
-
+      <div :class="`project_container ${show2}`">
+        <div class="project">
+          <div class="project_image">
+            <img src="../assets/Foody_home.png" alt="">
+          </div>
+          <div>
+            <h3>Projeto Foody</h3>
+            <p>Explore sabores irresistíveis! Delicie-se com nossa seleção de pratos gourmet, receitas tradicionais e guloseimas únicas. Uma experiência gastronômica que vai encantar seus sentidos. Visite agora e embarque em uma jornada culinária inesquecível</p>
+            <button>Visitar</button>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project_image">img</div>
+          <div>
+            <h3>Description</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit dolores quos praesentium
+              similique
+              inventore ab?</p>
+            <button>Visitar</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
-<style>
-.projects-container {
-  flex-direction: column;
-  margin: 10vh 0;
-}
-.projects {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-.projects div {
-  flex-direction: column;
-}
-.projects div img,
-.projects div p {
-  width: 30vw;
-  height: 30vh;
-  border: 1px solid gray;
-  margin: 3vh 5vw;
-  border-radius: 0.5rem;
-}
-.projects div img:hover{
-  animation: pulse 1s ease-in-out infinite;
-}
 
-.projects-container,
-.projects div,
-.projects div p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.projects div span {
-  font-size: 0.8rem;
-}
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@media (max-width: 600px) {
-  .projects div span {
-    font-size: 0.6rem;
-  }
-  .projects div {
-    margin: 0 5vw;
-  }
-}
-
-@media (max-width: 450px) {
-  .projects div img,
-  .projects div p {
-    width: 40vw;
-    height: 20vh;
-    margin: 5vh 0;
-  }
-}
-</style>
+<script>
+export default {
+  data() {
+    return {
+      showActive: true,
+      showActive2: true,
+    };
+  },
+  methods: {
+    changeActive() {
+      if (window.scrollY < 680) {
+        this.showActive = false;
+      } else {
+        this.showActive = true
+      }
+      if (window.scrollY < 1230) {
+        this.showActive2 = false
+      } else {
+        this.showActive2 = true
+      }
+    },
+  },
+  computed: {
+    show() {
+      return this.showActive ? 'show' : 'hidden';
+    },
+    show2() {
+      return this.showActive2 ? 'show' : 'hidden';
+    },
+  },
+  created() {
+    window.addEventListener('scroll', this.changeActive);
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.changeActive);
+  },
+};
+</script>
