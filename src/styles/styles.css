@@ -373,6 +373,7 @@
   border-bottom: 1px solid transparent;
   transition: 0.5s;
   font-family: "Abel", sans-serif;
+  color: #fff;
 }
 
 .header_menu li:hover {
