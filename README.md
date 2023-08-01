@@ -6,8 +6,7 @@ Esse é um projeto desenvolvido para ser meu portfólio pessoal
 
 ## Links
 
-- Site hospedado na Vercel: https://emerson-portfolio-gpo72c1qw-emersonsinezio.vercel.app/
-- Repositório: https://github.com/EmersonSinezio/Emerson_Porfolio
+- Site hospedado na Vercel: https://emerson-portfolio.vercel.app
   - Em caso de bugs por favor entre em contato. Email: emerson.sineziio@gmail.com
 
 ## Tecs
@@ -42,7 +41,7 @@ As tecs utilizadas para realizar o projeto:
 
 <hr/>
 
-### 4 - No final tem a aba contatos 
+### 4 - No final tem a aba contatos
 
 ![Projects](https://github.com/EmersonSinezio/Emerson_Portfolio/blob/main/public/Readme/Contact.png)
 

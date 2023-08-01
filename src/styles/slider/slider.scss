@@ -39,3 +39,10 @@
     height: 80%;
   }
 }
+
+@media (max-width: 600px) {
+  .skills_container .skill {
+    height: 100px;
+    transform: translateX(-70px);
+  }
+}

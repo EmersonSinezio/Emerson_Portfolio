@@ -42,3 +42,14 @@
   }
 }
 // ----- Header Styles -----
+@media (max-width: 600px) {
+  .header_logo {
+    font-size: 1.2rem;
+  }
+  .header_menu li {
+    font-size: 0.9rem;
+  }
+  .header_container {
+    width: 100vw;
+  }
+}
