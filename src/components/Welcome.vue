@@ -58,6 +58,9 @@
             </svg></div>
         </a>
       </div>
+      <a href="/EmersonCV.pdf" download rel="noopener noreferrer" target="_blank">
+        <button id="download">Download CV</button>
+      </a>
     </div>
   </div>
 </div></template>

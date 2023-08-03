@@ -85,6 +85,21 @@
   height: 100%;
   padding: 0.6rem;
 }
+
+#download {
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  background-color: $colorCyan;
+  &:hover {
+    transition: 0.5s;
+    background-color: transparent;
+    border-color: $colorCyan;
+    color: $colorWhite;
+    cursor: pointer;
+  }
+}
 // ----- Home Styles -----
 @media (max-width: 600px) {
   .profile {

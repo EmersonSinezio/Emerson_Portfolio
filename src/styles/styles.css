@@ -413,6 +413,22 @@
   padding: 0.6rem;
 }
 
+#download {
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  background-color: #00ffff;
+}
+
+#download:hover {
+  transition: 0.5s;
+  background-color: transparent;
+  border-color: #00ffff;
+  color: #fff;
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   .profile {
     width: 100vw;
