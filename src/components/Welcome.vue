@@ -5,7 +5,7 @@
         <div class="img">
           <img src="../assets/me.jpg" alt="profileIcon">
         </div>
-        <h3>FullStack Developer</h3>
+        <h3>Fullstack Developer Jr</h3>
         <p>Hello world i'm Emerson</p>
         <div class="icons">
 
