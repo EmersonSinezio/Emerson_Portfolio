@@ -1,58 +1,22 @@
-<img src="https://github.com/EmersonSinezio/Emerson_Portfolio/blob/main/src/assets/PortfolioIcon.png" alt="portfolio_personal" width="200px"/>
+# Portfólio [Em Desenvolvimento] 🚧
 
-## Portfólio Pessoal
+Bem-vindo ao meu portfólio em construção! Este é um projeto contínuo onde pretendo mostrar meus trabalhos, habilidades e experiências.
 
-Esse é um projeto desenvolvido para ser meu portfólio pessoal
+> **Nota Importante**  
+> Este projeto ainda está em fase inicial de desenvolvimento. Muitas seções estão incompletas ou serão adicionadas futuramente.
 
-## Links
+## 🛠 Tecnologias Utilizadas
 
-- Site hospedado na Vercel: https://emerson-portfolio.vercel.app
-  - Em caso de bugs por favor entre em contato. Email: emerson.sineziio@gmail.com
+- HTML5
+- CSS3 (com Flexbox/Grid)
+- JavaScript (em breve)
+- [Outras tecnologias serão adicionadas]
 
-## Tecs
+## 🔜 Funcionalidades Previstas
 
-As tecs utilizadas para realizar o projeto:
-
-- Vue-js
-- Sass
-
-## Serviços usados:
-
-- Github
-- Vercel
-
-## Inicialização
-
-### 1 - Quando abrir o app será recebido com a Home page
-
-![Homepage image](https://github.com/EmersonSinezio/Emerson_Portfolio/blob/main/public/Readme/personalportfolio.png)
-
-<hr/>
-
-### 2 - Ao descer um pouco a tela verá a aba de skills em quais tenho conhecimentos
-
-![Skills](https://github.com/EmersonSinezio/Emerson_Portfolio/blob/main/public/Readme/Skills.png)
-
-<hr/>
-
-### 3 - Mais abaixo tem a aba de projetos nos quais foram desenvolvidos e suas tecs
-
-![Projects](https://github.com/EmersonSinezio/Emerson_Portfolio/blob/main/public/Readme/Projects.png)
-
-<hr/>
-
-### 4 - No final tem a aba contatos
-
-![Projects](https://github.com/EmersonSinezio/Emerson_Portfolio/blob/main/public/Readme/Contact.png)
-
-<hr/>
-
-## Ideia do projeto
-
-A principal ideia do projeto é:
-
-- Criar um portfólio para mostrar meus conhecimentos
-
-## Autor
-
-- **Emerson Mesquita Sinézio**
+- [x] Layout básico
+- [x] Seção de projetos
+- [ ] Detalhes de habilidades técnicas
+- [x] Formulário de contato
+- [ ] Modo escuro/claro
+- [ ] Internacionalização (pt/en)
