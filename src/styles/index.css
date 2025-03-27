@@ -374,13 +374,12 @@ body {
   /* flex-wrap */
   margin: -1rem;
   /* -m-4 */
+  width: 100%;
 }
 
 .card-wrapper {
-  width: 100%;
-  /* xl:w-1/4 md:w-1/2 */
   padding: 1rem;
-  /* p-4 */
+  width: 33%;
 }
 
 @media (min-width: 768px) {
@@ -391,7 +390,7 @@ body {
 
 @media (min-width: 1280px) {
   .card-wrapper {
-    width: 25%;
+    width: 33%;
   }
 }
 
