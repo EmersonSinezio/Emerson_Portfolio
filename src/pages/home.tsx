@@ -32,23 +32,23 @@ function Home() {
           </Link>
         </div>
         <div className="contact-icons">
-          <a href="">
+          <a href="https://github.com/EmersonSinezio">
             <FaGithub className="icon" />
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/in/emerson-sineziio">
             <FaLinkedinIn className="icon" />
           </a>
-          <a href="">
+          <a href="mailto:emerson.sineziio@gmail.com">
             <IoIosMail className="icon" />
           </a>
-          <a href="">
+          <a href="https://api.whatsapp.com/send?phone=5585992846060">
             <FaWhatsapp className="icon" />
           </a>
         </div>
       </div>
       <div className="home_right">
         <div className="home_right_background"></div>
-        <img src="./assets/Home.png" />
+        <img src="./assets/Home.png" className="home_right_image" alt="" />
       </div>
     </div>
   );

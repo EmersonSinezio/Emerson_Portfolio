@@ -34,17 +34,7 @@ const Typewriter = () => {
     return () => clearTimeout(timer);
   }, [charIndex, isDeleting, currentTextIndex]);
 
-  // Estilos CSS inline
   const styles = {
-    typewriter: {
-      fontFamily: "monospace",
-      fontSize: "2rem",
-      fontWeight: "bold",
-      whiteSpace: "nowrap",
-      overflow: "hidden",
-      margin: "0 auto",
-      paddingRight: "4px",
-    },
     blink: {
       animation: "blink 1s step-end infinite",
       borderRight: "4px solid",
@@ -52,7 +42,7 @@ const Typewriter = () => {
   };
 
   return (
-    <div style={styles.typewriter}>
+    <div className="typewriter">
       {text}
       <span style={styles.blink}></span>
       <style>

@@ -43,15 +43,17 @@ body {
 
 .home_container {
   width: 100%;
-  height: 90vh;
+  height: 89vh;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4rem;
+  overflow: hidden;
 }
 
 .home_container .home_left {
-  width: 40%;
+  width: 60%;
+  padding: 0 2rem;
 }
 
 .home_container .home_left h1 {
@@ -87,7 +89,7 @@ body {
 }
 
 .home_container .home_left .custom-button .icon {
-  color: #4f46e5;
+  color: #fff;
 }
 
 .home_container .home_left .custom-button:focus {
@@ -113,7 +115,7 @@ body {
   position: relative;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #4f46e5;
+  color: #fff;
   transition: color 0.3s ease;
 }
 
@@ -161,7 +163,7 @@ body {
   position: relative;
 }
 
-.home_container .home_right img {
+.home_container .home_right .home_right_image {
   width: 100%;
 }
 
@@ -206,6 +208,16 @@ body {
   animation: blink 1s step-end infinite;
 }
 
+.typewriter {
+  font-family: monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-right: 4px;
+}
+
 @keyframes fade-in {
   from {
     filter: drop-shadow(10px 5px 10px rgba(255, 255, 255, 0.3));
@@ -247,6 +259,68 @@ body {
   }
   50% {
     background-position: 100% 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home_container {
+    flex-direction: column;
+  }
+  .home_container .home_left {
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+  .home_container .home_left h1 {
+    font-size: 1.5rem;
+  }
+  .home_container .home_left h2 {
+    font-size: 1.2rem;
+  }
+  .home_container .home_left p {
+    font-size: 1rem;
+  }
+  .home_container .home_left .home_buttons {
+    justify-content: start;
+  }
+  .home_container .home_left .contact-icons {
+    justify-content: start;
+  }
+  .home_container .home_right {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .home_container {
+    flex-direction: column;
+  }
+  .home_container .home_left {
+    width: 100%;
+  }
+  .home_container .home_left .home_buttons {
+    justify-content: center;
+  }
+  .home_container .home_left .contact-icons {
+    justify-content: center;
+  }
+  .home_container .home_left .typewriter {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .home_container .home_left h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .home_container .home_left p {
+    font-size: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+    width: 80%;
+  }
+  .home_container .home_left .home_buttons a {
+    width: 9rem;
+    height: 3.5rem;
+    font-size: 0.8rem;
   }
 }
 
