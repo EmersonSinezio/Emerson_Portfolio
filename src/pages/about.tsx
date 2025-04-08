@@ -1,5 +1,13 @@
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
+import Carousel from "../components/Carousel";
+
 export default function About() {
+  const images = [
+    "https://dummyimage.com/720x400",
+    "https://dummyimage.com/720x400",
+    "https://dummyimage.com/720x400",
+  ];
   return (
     <div className="about-container">
       <div className="aboutContainer">
@@ -31,7 +39,7 @@ export default function About() {
             <FaChevronDown className="about-icon" />
           </div>
 
-          <div className="infoGrid">
+          {/* <div className="infoGrid">
             <div className="infoCard">
               <h2>Habilidades</h2>
               <div className="skills">
@@ -79,17 +87,32 @@ export default function About() {
                 Universidade Estacio de Sá (2022 - Presente)
               </p>
             </div>
-          </div>
+          </div> */}
+          <Carousel images={images} interval={3000} />
 
           <div className="contactLinks">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-github"></i>
+            <a
+              href="https://github.com/EmersonSinezio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-github">
+                <FaGithub />
+              </i>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-linkedin"></i>
+            <a
+              href="https://linkedin.com/in/emerson-sineziio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-linkedin">
+                <FaLinkedinIn />
+              </i>
             </a>
-            <a href="mailto:contato@portfolio.com">
-              <i className="fas fa-envelope"></i>
+            <a href="mailto:emerson.sineziio@gmail.com">
+              <i className="fas fa-envelope">
+                <IoIosMail />
+              </i>
             </a>
           </div>
         </div>
