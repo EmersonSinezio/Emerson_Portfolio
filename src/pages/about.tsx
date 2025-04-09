@@ -3,11 +3,6 @@ import { IoIosMail } from "react-icons/io";
 import Carousel from "../components/Carousel";
 
 export default function About() {
-  const images = [
-    "https://dummyimage.com/720x400",
-    "https://dummyimage.com/720x400",
-    "https://dummyimage.com/720x400",
-  ];
   return (
     <div className="about-container">
       <div className="aboutContainer">
@@ -39,56 +34,7 @@ export default function About() {
             <FaChevronDown className="about-icon" />
           </div>
 
-          {/* <div className="infoGrid">
-            <div className="infoCard">
-              <h2>Habilidades</h2>
-              <div className="skills">
-                {[
-                  "TypeScript",
-                  "React",
-                  "Node.js",
-                  "AWS",
-                  "UI/UX",
-                  "Docker",
-                  "Git",
-                  "Agile",
-                ].map((skill, index) => (
-                  <span key={index} className="skill">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            <div className="infoCard">
-              <h2>Cursos realizados</h2>
-              <p>
-                Curso Desenvolvimento Web - Programador Br
-                <br />
-                <span>50 horas</span>
-              </p>
-              <p>
-                Full Stack JavaScript - Onebitcode
-                <br />
-                <span>200 horas</span>
-              </p>
-              <p>
-                Desenvolvedor Web Full Stack - Digital College
-                <br />
-                <span>192 horas</span>
-              </p>
-            </div>
-
-            <div className="infoCard">
-              <h2>Educação</h2>
-              <p>
-                Análise e Desenvolvimento de Sistemas
-                <br />
-                Universidade Estacio de Sá (2022 - Presente)
-              </p>
-            </div>
-          </div> */}
-          <Carousel images={images} interval={3000} />
+          <Carousel interval={3000} />
 
           <div className="contactLinks">
             <a
