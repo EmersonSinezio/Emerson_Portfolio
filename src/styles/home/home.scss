@@ -1,0 +1,231 @@
+.home_container {
+  width: 100%;
+  height: 89vh;
+  @include flex-center;
+  gap: $space-lg;
+  overflow: hidden;
+
+  .home_left {
+    width: 60%;
+    padding: 0 $space-md;
+
+    h1 {
+      font-weight: bold;
+      font-size: $font-lg;
+    }
+
+    span {
+      font-size: $font-m;
+    }
+
+    p {
+      font-size: $font-s;
+      margin-top: $space-sm;
+    }
+
+    .home_buttons {
+      margin: $font-m 0;
+      gap: $font-s;
+    }
+
+    .custom-button {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      border: 1px solid $color6;
+      padding: 12px 32px;
+      text-decoration: none;
+      @include flex-center;
+      gap: $space-xs;
+
+      .icon {
+        color: $color2;
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.5);
+      }
+
+      .button-underline {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 2px;
+        background-color: $color6;
+        transition: all 0.3s ease;
+      }
+
+      &:hover .button-underline {
+        width: 100%;
+      }
+
+      .button-text {
+        position: relative;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: $color2;
+        transition: color 0.3s ease;
+      }
+
+      &:hover .button-text {
+        color: white;
+      }
+    }
+
+    .contact-icons {
+      display: flex;
+      gap: $space-xs;
+      margin-top: $font-s;
+      padding: $space-xs;
+      width: 100%;
+      @include flex-center;
+
+      a {
+        @include flex-center;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: $space-xs;
+        border: 1px solid #6366f1;
+        border-radius: 50%;
+        font-size: $font-m;
+        cursor: pointer;
+
+        .icon {
+          width: 100%;
+          height: 100%;
+          color: #e0e0e0;
+        }
+
+        &:hover {
+          transition: 0.5s ease-in-out;
+          background-color: #6366f1;
+        }
+      }
+    }
+  }
+
+  .home_right {
+    width: 40%;
+    position: relative;
+
+    .home_right_image {
+      width: 100%;
+    }
+
+    .home_right_background {
+      width: 100%;
+      height: 100%;
+      background: $color2-gradient;
+      filter: blur(10px);
+      position: absolute;
+      right: -10px;
+      border-radius: 50%;
+      animation: 2s backgroundAnimation infinite alternate;
+    }
+
+    img {
+      width: 100%;
+      animation: fade-in 2s ease-in-out infinite alternate;
+    }
+  }
+
+  .home_buttons {
+    margin-top: $space-md;
+    @include flex-center;
+    gap: $font-s;
+
+    button {
+      width: 10rem;
+      height: $space-md;
+      border-radius: $space-xs;
+      border: none;
+      cursor: pointer;
+      font-size: $font-xs;
+    }
+  }
+
+  .typewriter {
+    font-size: $font-lg;
+  }
+
+  // Media Queries Home
+  @media (max-width: 1024px) {
+    flex-direction: column;
+
+    .home_left {
+      width: 70%;
+      margin-bottom: $space-md;
+
+      h1 {
+        font-size: $font-m;
+      }
+
+      h2 {
+        font-size: 1$space-md;
+      }
+
+      p {
+        font-size: $font-s;
+      }
+
+      .home_buttons {
+        justify-content: start;
+      }
+
+      .contact-icons {
+        justify-content: start;
+      }
+    }
+
+    .home_right {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .home_left {
+      width: 100%;
+
+      .home_buttons {
+        justify-content: center;
+      }
+
+      .contact-icons {
+        justify-content: center;
+      }
+
+      .typewriter {
+        font-size: 1.15rem;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: $font-s;
+        text-align: center;
+      }
+
+      p {
+        font-size: $font-s;
+        margin: $font-s auto;
+        text-align: center;
+        width: 80%;
+      }
+
+      .home_buttons a {
+        width: 9rem;
+        height: 3.5rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .typewriter {
+      font-size: 0.8rem;
+    }
+  }
+}

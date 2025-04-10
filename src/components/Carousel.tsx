@@ -20,18 +20,12 @@ type CourseContent = {
   items: CourseItem[];
 };
 
-type EducationItem = {
-  course: string;
-  institution: string;
-};
-
-type EducationContent = {
-  type: "education";
+type AboutContent = {
+  type: "about-me";
   title: string;
-  items: EducationItem[];
 };
 
-type SlideContentType = SkillContent | CourseContent | EducationContent;
+type SlideContentType = SkillContent | CourseContent | AboutContent;
 
 // Props do componente
 interface CarouselProps {
@@ -59,8 +53,13 @@ const slidesContent: SlideContentType[] = [
   },
   {
     type: "courses",
-    title: "Cursos realizados",
+    title: "Educação",
     items: [
+      {
+        name: "Análise e Desenvolvimento de Sistemas",
+        institution: "Universidade Estacio de Sá",
+        hours: "",
+      },
       {
         name: "Curso Desenvolvimento Web",
         hours: "50 horas",
@@ -79,14 +78,8 @@ const slidesContent: SlideContentType[] = [
     ],
   },
   {
-    type: "education",
-    title: "Educação",
-    items: [
-      {
-        course: "Análise e Desenvolvimento de Sistemas",
-        institution: "Universidade Estacio de Sá (2022 - Presente)",
-      },
-    ],
+    type: "about-me",
+    title: "Sobre Mim",
   },
 ];
 
@@ -115,29 +108,32 @@ const SlideContent = ({ content }: SlideContentProps) => {
       return (
         <div className="infoCard courses">
           <h2>{content.title}</h2>
-          {content.items.map((course, index) => (
-            <p key={index}>
-              {course.name}
-              <br />
-              <span>{course.institution}</span>
-              <br />
-              <span>{course.hours}</span>
-            </p>
-          ))}
+          <div className="courses-container">
+            {content.items.map((course, index) => (
+              <div className="course">
+                <p key={index} id="course">
+                  {course.name}
+                </p>
+                <span>{course.institution}</span>
+                <span>{course.hours}</span>
+              </div>
+            ))}
+          </div>
         </div>
       );
 
-    case "education":
+    case "about-me":
       return (
-        <div className="infoCard education">
+        <div className="infoCard about-me">
           <h2>{content.title}</h2>
-          {content.items.map((edu, index) => (
-            <p key={index}>
-              {edu.course}
-              <br />
-              {edu.institution}
-            </p>
-          ))}
+          <div className="about-info">
+            Desenvolvedor Full Stack apaixonado por tecnologia, com 3 anos de
+            aprendizado em construção de soluções web. Iniciei minha jornada
+            durante a pandemia através do curso <strong>Programador Br</strong>,
+            onde descobri minha vocação para transformar linhas de código em
+            experiências funcionais. Desde então, venho me dedicando ao estudo
+            contínuo de tecnologias modernas e boas práticas de desenvolvimento.
+          </div>
         </div>
       );
 

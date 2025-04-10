@@ -1,0 +1,85 @@
+// Configurações de Variáveis
+
+// Colors
+$color1: #000;
+$color2: #fff;
+$color3: #000b58;
+$color4: #003161;
+$color5: #006a67;
+$color6: #4f46e5;
+
+$color1-rgba: rgba(0, 0, 0, 1);
+$color2-rgba: rgba(255, 255, 255, 1);
+
+$color1-gradient: linear-gradient(180deg, #000b58 0%, #003161 100%);
+$color2-gradient: linear-gradient(180deg, #006a67 0%, #000b58 100%);
+$color3-gradient: linear-gradient(180deg, #00023d 0%, #080808 100%);
+$color4-gradient: linear-gradient(180deg, #0f0f0f 0%, #1a2421 100%);
+
+$color1-gradient-rgba: linear-gradient(
+  180deg,
+  rgba(0, 11, 88, 1) 0%,
+  rgba(0, 49, 97, 1) 100%
+);
+$color2-gradient-rgba: linear-gradient(
+  180deg,
+  rgba(0, 106, 103, 1) 0%,
+  rgba(0, 11, 88, 1) 100%
+);
+
+// Fonts
+$font-m: 1.5rem;
+$font-s: 1rem;
+$font-xs: 0.75rem;
+$font-lg: 2rem;
+$font-xl: 3rem;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Spacing
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 2rem;
+$space-lg: 4rem;
+$space-xl: 8rem;
+
+// Transitions
+$transition-fast: all 0.2s ease-in-out;
+$transition-medium: all 0.3s ease-in-out;
+$transition-slow: all 0.5s ease-in-out;
+
+// Shadows
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-center-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

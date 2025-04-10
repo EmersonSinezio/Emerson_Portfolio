@@ -1,4 +1,4 @@
-import Typewriter from "../components/typewriter";
+import Typewriter from "../components/Typewriter";
 import {
   FaArrowRight,
   FaFileDownload,
