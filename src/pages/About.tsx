@@ -24,9 +24,9 @@ export default function About() {
             />
             <h1>Emerson Mesquita</h1>
             <p className="bio">
-              Desenvolvedor Front-End especializado em criar interfaces fluidas
-              e responsivas. Com 5 anos de experiência em desenvolvimento web,
-              foco em soluções modernas utilizando React e TypeScript.
+              Desenvolvedor fullstack. Com 3 anos de experiência em
+              desenvolvimento web, foco em soluções modernas utilizando React e
+              TypeScript.
             </p>
           </header>
 
