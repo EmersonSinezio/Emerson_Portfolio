@@ -32,7 +32,7 @@ export const projects: Project[] = [
     description: "Este projeto é um e-commerce de calçados feito com NextJS.",
     image: "./assets/Sneakers_Homepage.png",
     tecs: "NextJS | Css Modules",
-    link: "https://foody-pearl-alpha.vercel.app/",
+    link: "https://sneakers-opal-alpha.vercel.app/",
     type: "Front-end",
   },
   {

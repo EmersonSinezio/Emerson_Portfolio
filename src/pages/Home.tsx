@@ -20,11 +20,15 @@ function Home() {
           cursos e projetos pessoais.
         </p>
         <div className="home_buttons">
-          <Link to="/about" className="custom-button">
+          <a
+            href="/CV.pdf"
+            download={"EmersonMesquita_CV.pdf"}
+            className="custom-button"
+          >
             <FaFileDownload className="icon" />
             <span className="button-underline"></span>
             <span className="button-text">Download CV</span>
-          </Link>
+          </a>
           <Link className="custom-button" to="/projects">
             <span className="button-underline"></span>
             <span className="button-text">Visitar Projetos</span>
