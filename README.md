@@ -1,22 +1,51 @@
-# Portfólio [Em Desenvolvimento] 🚧
+# Portifolio Profissional - Emerson Sinezio
 
-Bem-vindo ao meu portfólio em construção! Este é um projeto contínuo onde pretendo mostrar meus trabalhos, habilidades e experiências.
+[![React](https://img.shields.io/badge/React-18.2.0-blue)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-18.17.1-green)](https://nodejs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-7.0-green)](https://www.mongodb.com/)
 
-> **Nota Importante**  
-> Este projeto ainda está em fase inicial de desenvolvimento. Muitas seções estão incompletas ou serão adicionadas futuramente.
+[![Vercel Deployment](https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel)](https://emerson-portfolio.vercel.app)
+
+Portfólio profissional full-stack desenvolvido para exibir projetos técnicos e receber contatos de forma segura e eficiente.
+
+## ✨ Funcionalidades Principais
+
+### Frontend (React + TypeScript)
+
+- **Exposição de Projetos**: Galeria organizada com filtros por tecnologias
+- **Design Responsivo**: Layout adaptável para todos os dispositivos
+- **Animações CSS**: Transições suaves usando Sass e CSS Modules
+- **Modo Escuro**: Alternância entre temas claro/escuro (em implementação)
+
+### Backend (Node.js + Express)
+
+- **API REST**: Endpoints para envio de formulários
+- **Armazenamento Seguro**: Dados salvos no MongoDB Atlas
+- **Validação de Dados**: Middlewares para sanitização de inputs
+- **CORS**: Configuração segura para acesso frontend
 
 ## 🛠 Tecnologias Utilizadas
 
-- HTML5
-- CSS3 (com Flexbox/Grid)
-- JavaScript (em breve)
-- [Outras tecnologias serão adicionadas]
+| Camada          | Tecnologias                                     |
+| --------------- | ----------------------------------------------- |
+| **Frontend**    | React, TypeScript, Sass, React Router,          |
+| **Backend**     | Node.js, Express, Mongoose, TypeScript,         |
+| **Banco Dados** | MongoDB Atlas, Mongoose                         |
+| **Deploy**      | Vercel (Frontend / Backend)                     |
+| **Ferramentas** | ESLint, Prettier, Git, Webpack, MongoDB Compass |
 
-## 🔜 Funcionalidades Previstas
+## 🚀 Instalação e Uso
 
-- [x] Layout básico
-- [x] Seção de projetos
-- [ ] Detalhes de habilidades técnicas
-- [x] Formulário de contato
-- [ ] Modo escuro/claro
-- [ ] Internacionalização (pt/en)
+### Pré-requisitos
+
+- Node.js 18.x
+- MongoDB Atlas (ou local)
+- Git
+
+## 📬 Contato
+
+[![Email](https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white)](https://mailto:emerson.sineziio@gmail.com/) [![LinkedIn](https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/emerson-sineziio) [![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5585992846060)
+
+---
+
+**Nota:** Projeto em constante evolução - próxima atualização prevista inclui sistema de autenticação para área admin.
