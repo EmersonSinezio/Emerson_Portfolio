@@ -48,13 +48,13 @@ export const projects: Project[] = [
   },
   {
     id: 5,
-    title: "Indisponivel",
+    title: "Day Notes",
     description:
-      "Este projeto está em fase de desenvolvimento e estará disponível em breve.",
-    image: "https://dummyimage.com/720x400",
-    tecs: "",
-    link: "#",
-    type: "",
+      "Este projeto é um aplicativo de anotações pessoais feito com NodeJS e Express.",
+    image: "./assets/dayNotes_home.jpg",
+    tecs: "React | NodeJS | Express | MongoDB",
+    link: "https://day-notes-client.vercel.app",
+    type: "Back-end",
   },
   {
     id: 6,
