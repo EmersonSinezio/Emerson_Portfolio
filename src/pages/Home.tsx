@@ -21,7 +21,7 @@ function Home() {
         </p>
         <div className="home_buttons">
           <a
-            href="/CV.pdf"
+            href="/Curriculo.pdf"
             download={"EmersonMesquita.pdf"}
             className="custom-button"
           >
