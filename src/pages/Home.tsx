@@ -22,12 +22,12 @@ function Home() {
         <div className="home_buttons">
           <a
             href="/CV.pdf"
-            download={"EmersonMesquita_CV.pdf"}
+            download={"EmersonMesquita.pdf"}
             className="custom-button"
           >
             <FaFileDownload className="icon" />
             <span className="button-underline"></span>
-            <span className="button-text">Download CV</span>
+            <span className="button-text">Currículo</span>
           </a>
           <Link className="custom-button" to="/projects">
             <span className="button-underline"></span>
