@@ -1,51 +1,72 @@
-# Portifolio Profissional - Emerson Sinezio
+# Portfólio - Emerson Mesquita
 
-[![React](https://img.shields.io/badge/React-18.2.0-blue)](https://reactjs.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-18.17.1-green)](https://nodejs.org/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-7.0-green)](https://www.mongodb.com/)
+Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar meus projetos, habilidades e experiência profissional como Desenvolvedor Full Stack Java.
 
-[![Vercel Deployment](https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel)](https://emerson-portfolio.vercel.app)
+## 🚀 Tecnologias Utilizadas
 
-Portfólio profissional full-stack desenvolvido para exibir projetos técnicos e receber contatos de forma segura e eficiente.
+O projeto foi construído utilizando as seguintes tecnologias:
 
-## ✨ Funcionalidades Principais
+- **Frontend:**
+  - [React](https://reactjs.org/) (com TypeScript)
+  - [Vite](https://vitejs.dev/)
+  - [Tailwind CSS](https://tailwindcss.com/)
+  - [Framer Motion](https://www.framer.com/motion/) (para animações)
+  - [Radix UI](https://www.radix-ui.com/) (componentes acessíveis)
+  - [React Router](https://reactrouter.com/) (navegação)
+  - [React Toastify](https://fkhadra.github.io/react-toastify/) (notificações)
 
-### Frontend (React + TypeScript)
+- **Backend (Integração):**
+  - [Axios](https://axios-http.com/) (para requisições HTTP)
+  - Integração com API externa para envio de formulário de contato.
 
-- **Exposição de Projetos**: Galeria organizada com filtros por tecnologias
-- **Design Responsivo**: Layout adaptável para todos os dispositivos
-- **Animações CSS**: Transições suaves usando Sass e CSS Modules
-- **Modo Escuro**: Alternância entre temas claro/escuro (em implementação)
+## 🛠️ Funcionalidades
 
-### Backend (Node.js + Express)
+- **Apresentação Pessoal:** Seção "Sobre Mim" com resumo profissional e avatar.
+- **Portfólio de Projetos:** Listagem de projetos com filtros (Frontend/Backend), detalhes, links para demo e código-fonte.
+- **Linha do Tempo:** Exibição visual da experiência profissional e formação acadêmica.
+- **Formulário de Contato:** Formulário funcional integrado com API para envio de mensagens.
+- **Design Responsivo:** Layout adaptável para dispositivos móveis e desktop.
+- **Tema Escuro/Claro:** Suporte a alternância de temas.
 
-- **API REST**: Endpoints para envio de formulários
-- **Armazenamento Seguro**: Dados salvos no MongoDB Atlas
-- **Validação de Dados**: Middlewares para sanitização de inputs
-- **CORS**: Configuração segura para acesso frontend
+## 📦 Como Rodar Localmente
 
-## 🛠 Tecnologias Utilizadas
+Siga os passos abaixo para executar o projeto em sua máquina:
 
-| Camada          | Tecnologias                                     |
-| --------------- | ----------------------------------------------- |
-| **Frontend**    | React, TypeScript, Sass, React Router,          |
-| **Backend**     | Node.js, Express, Mongoose, TypeScript,         |
-| **Banco Dados** | MongoDB Atlas, Mongoose                         |
-| **Deploy**      | Vercel (Frontend / Backend)                     |
-| **Ferramentas** | ESLint, Prettier, Git, Webpack, MongoDB Compass |
+1.  **Clone o repositório:**
 
-## 🚀 Instalação e Uso
+    ```bash
+    git clone https://github.com/EmersonSinezio/Emerson_Portfolio.git
+    cd Emerson_Portfolio
+    ```
 
-### Pré-requisitos
+2.  **Instale as dependências:**
 
-- Node.js 18.x
-- MongoDB Atlas (ou local)
-- Git
+    ```bash
+    npm install
+    ```
 
-## 📬 Contato
+3.  **Configure as variáveis de ambiente:**
 
-[![Email](https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white)](https://mailto:emerson.sineziio@gmail.com/) [![LinkedIn](https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/emerson-sineziio) [![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5585992846060)
+    Crie um arquivo `.env` na raiz do projeto (se necessário) e configure a URL da API:
+
+    ```env
+    VITE_API_URL=http://localhost:3000 # ou a URL da sua API de produção
+    ```
+
+4.  **Execute o servidor de desenvolvimento:**
+
+    ```bash
+    npm run dev
+    ```
+
+5.  **Acesse a aplicação:**
+
+    Abra o navegador e acesse `http://localhost:5173` (ou a porta indicada no terminal).
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
-**Nota:** Projeto em constante evolução - próxima atualização prevista inclui sistema de autenticação para área admin.
+Desenvolvido por [Emerson Mesquita](https://github.com/EmersonSinezio).
