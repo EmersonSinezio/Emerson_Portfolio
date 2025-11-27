@@ -95,7 +95,7 @@ export function AboutSection() {
             className="flex flex-col items-center md:items-start"
           >
             <Avatar className="w-48 h-48 md:w-64 md:h-64 mb-6 border-4 border-primary/20" data-testid="img-avatar">
-              <AvatarImage src="/public/assets/me.png" alt="Emerson Mesquita" />
+              <AvatarImage src="/assets/me.png" alt="Emerson Mesquita" />
               <AvatarFallback className="text-4xl font-bold">EM</AvatarFallback>
             </Avatar>
 
