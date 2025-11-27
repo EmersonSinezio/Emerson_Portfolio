@@ -110,7 +110,7 @@ export function Footer() {
               data-testid="button-footer-cv"
               className="w-full"
             >
-              <a href="/cv.pdf" download>
+              <a href="/curriculo_emerson_ats.pdf" download>
                 <Download className="w-4 h-4 mr-2" />
                 Download Curriculo
               </a>
