@@ -22,13 +22,13 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6">
             Emerson Mesquita
           </h1>
 
           <Typewriter />
 
-          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-12">
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-12 px-4">
             Construindo microsserviços escaláveis e aplicações web modernas com expertise em
             arquitetura backend, infraestrutura em nuvem e desenvolvimento frontend responsivo.
           </p>
@@ -38,7 +38,7 @@ export function HeroSection() {
               size="lg"
               onClick={scrollToContact}
               data-testid="button-contact"
-              className="min-h-12 px-8"
+              className="min-h-12 px-8 w-full sm:w-auto"
             >
               <FaEnvelope className="w-4 h-4 mr-2" />
               Contato
@@ -48,7 +48,7 @@ export function HeroSection() {
               variant="outline"
               asChild
               data-testid="button-download-cv"
-              className="min-h-12 px-8"
+              className="min-h-12 px-8 w-full sm:w-auto"
             >
               <a href="/curriculo_emerson_ats.pdf" download>
                 <FaDownload className="w-4 h-4 mr-2" />

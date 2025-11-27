@@ -39,7 +39,7 @@ export function ProjectsSection() {
           </motion.div>
         </div>
 
-        <div className="flex justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
           <Button
             variant={activeTab === "all" ? "default" : "outline"}
             onClick={() => setActiveTab("all")}

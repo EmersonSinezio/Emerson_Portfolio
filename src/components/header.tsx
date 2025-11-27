@@ -1,10 +1,19 @@
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/components/theme-provider";
 import { Link } from "wouter";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetTitle,
+  SheetDescription,
+} from "@/components/ui/sheet";
+import { useState } from "react";
 
 export function Header() {
   const { theme, toggleTheme } = useTheme();
+  const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
     { name: "Início", path: "/" },
@@ -15,11 +24,14 @@ export function Header() {
   ];
 
   const scrollToSection = (id: string) => {
+    setIsOpen(false);
     if (id.startsWith("#")) {
       const element = document.querySelector(id);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
@@ -36,6 +48,7 @@ export function Header() {
             </button>
           </Link>
 
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-1">
             {navItems.map((item) => (
               <button
@@ -47,21 +60,65 @@ export function Header() {
                 {item.name}
               </button>
             ))}
+            <Button
+              size="icon"
+              variant="ghost"
+              onClick={toggleTheme}
+              data-testid="button-theme-toggle"
+              aria-label="Toggle theme"
+              className="ml-2"
+            >
+              {theme === "light" ? (
+                <Moon className="w-5 h-5" />
+              ) : (
+                <Sun className="w-5 h-5" />
+              )}
+            </Button>
           </nav>
 
-          <Button
-            size="icon"
-            variant="ghost"
-            onClick={toggleTheme}
-            data-testid="button-theme-toggle"
-            aria-label="Toggle theme"
-          >
-            {theme === "light" ? (
-              <Moon className="w-5 h-5" />
-            ) : (
-              <Sun className="w-5 h-5" />
-            )}
-          </Button>
+          {/* Mobile Navigation */}
+          <div className="flex items-center gap-2 md:hidden">
+            <Button
+              size="icon"
+              variant="ghost"
+              onClick={toggleTheme}
+              data-testid="button-theme-toggle-mobile"
+              aria-label="Toggle theme"
+            >
+              {theme === "light" ? (
+                <Moon className="w-5 h-5" />
+              ) : (
+                <Sun className="w-5 h-5" />
+              )}
+            </Button>
+
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" aria-label="Menu">
+                  <Menu className="w-6 h-6" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                <div className="sr-only">
+                  <SheetTitle>Menu de Navegação</SheetTitle>
+                  <SheetDescription>
+                    Navegue pelas seções do portfólio.
+                  </SheetDescription>
+                </div>
+                <nav className="flex flex-col gap-4 mt-8">
+                  {navItems.map((item) => (
+                    <button
+                      key={item.name}
+                      onClick={() => scrollToSection(item.path)}
+                      className="text-lg font-medium text-foreground hover:text-primary text-left px-2 py-2 transition-colors"
+                    >
+                      {item.name}
+                    </button>
+                  ))}
+                </nav>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>
